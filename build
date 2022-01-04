@@ -1,0 +1,1 @@
+gcc -flto -O3 -march=native entropy.c handle_ferr.c entropy-test2.c -o entropy-test2 -lm
