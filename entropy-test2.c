@@ -87,7 +87,7 @@ int main(int argc, char *argv[])
 
             if (madvise(map, st.st_size, MADV_SEQUENTIAL) == -1) {
                 fprintf(stderr, "madvise error: ");
-                handle_ferr(argv[1], argv[0]);
+                handle_ferr(argv[i], argv[0]);
                 goto lbl1;
             }
 
